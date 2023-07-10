@@ -12,19 +12,19 @@ variable "account-request-table-hash" {
 
 variable "control_tower_parameters" {
   type = object({
-    AccountEmail              = string
-    AccountName               = string
-    ManagedOrganizationalUnit = string
-    SSOUserEmail              = string
-    SSOUserFirstName          = string
-    SSOUserLastName           = string
+    AccountEmail              = "thg110404@gmail.com"
+    AccountName               = "sanbox-uat"
+    ManagedOrganizationalUnit = "sandbox-testing"
+    SSOUserEmail              = "thg110404@gmail.com"
+    SSOUserFirstName          = "sandbox"
+    SSOUserLastName           = "user"
   })
 }
 
 variable "change_management_parameters" {
   type = object({
-    change_requested_by = string
-    change_reason       = string
+    change_requested_by = "ganesh"
+    change_reason       = "craete a new account"
   })
 }
 
